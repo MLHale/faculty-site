@@ -24,6 +24,11 @@ section.background-secondary {
   border-top: solid 1px #338c82;
   border-bottom: solid 1px #338c82;
 }
+
+.main-heading {
+  margin-top: -5px;
+}
+
 .section-inverse {
   color: #fff;
 }
@@ -1609,9 +1614,7 @@ a:focus {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-.img-rounded {
-  border-radius: 0;
-}
+
 hr {
   margin-top: 24px;
   margin-bottom: 24px;

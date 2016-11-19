@@ -11,6 +11,15 @@ Router.map(function() {
   this.route('contact');
   this.route('publications');
   this.route('students');
+  this.route('cybertrust');
+  this.route('secuwear');
+  this.route('gencyber');
+
+  this.route('projects', function() {
+    this.route('gencyber');
+    this.route('secuwear');
+    this.route('cybertrust');
+  });
 });
 
 export default Router;
