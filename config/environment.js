@@ -5,7 +5,8 @@ module.exports = function(environment) {
     modulePrefix: 'halelab',
     environment: environment,
     rootURL: '/',
-    locationType: 'auto',
+    routerRootURL: '/',
+    locationType: 'hash',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -39,7 +40,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.rootURL = '/mhale/'
+    ENV.routerRootURL = '/'
   }
 
   return ENV;
