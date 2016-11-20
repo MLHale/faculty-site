@@ -1,5 +1,16 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  active: ''
+  showMenu: '',
+  actions: {
+    toggleMenu(){
+      if (this.get('showMenu')){
+        this.set('showMenu', '');
+      }
+      else{
+        this.set('showMenu', 'active');
+      }
+      
+    }
+  }
 });
