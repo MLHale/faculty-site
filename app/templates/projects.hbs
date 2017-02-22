@@ -1,0 +1,13 @@
+<div class="hidden-xs col-sm-3">
+	<h4>Projects:</h4>
+</div>
+<div class="col-xs-12 col-sm-9">
+	<ul class="nav nav-tabs nav-justified project-menu">
+		{{#active-link}}{{#link-to 'projects.gencyber'}}Gencyber{{/link-to}}{{/active-link}}
+		{{#active-link}}{{#link-to 'projects.secuwear'}}SecuWear{{/link-to}}{{/active-link}}
+		{{#active-link}}{{#link-to 'projects.cybertrust'}}Cybertrust{{/link-to}}{{/active-link}}
+	</ul>
+</div>
+<div class="col-xs-12">
+	{{outlet}}
+</div>

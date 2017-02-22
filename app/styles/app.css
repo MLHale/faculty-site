@@ -25,6 +25,9 @@ section.background-secondary {
   border-bottom: solid 1px #338c82;
 }
 
+.project-menu > li > a.active {
+  border-bottom-color: #f4f4f4 !important;
+}
 .main-heading {
   margin-top: -5px;
 }

@@ -2,11 +2,15 @@
 	<h4 class="main-heading">Current Work</h4>
 	{{#masonry-grid items=content customLayout=true gutter=10 as |item index grid|}}
 		
-		{{#masonry-item item=item grid=grid class="box-masonry col-xs-12 col-sm-5 col-md-5 col-lg-5"}}
+		{{#masonry-item item=item grid=grid class="box-masonry col-xs-12 col-sm-12 col-md-5 col-lg-5"}}
 			{{#if item.link}}
 				{{#link-to item.link class="box-masonry-image with-hover-overlay with-hover-icon"}}
 					<img src="{{constants.rootURL}}{{item.img}}" class="img-responsive">
 				{{/link-to}}
+			{{else if item.link_external}}
+				<a href="{{item.link_external}}" target="_blank" class="box-masonry-image with-hover-overlay with-hover-icon">
+					<img src="{{constants.rootURL}}{{item.img}}" class="img-responsive">
+				</a>
 			{{else}}
 				<img src="{{constants.rootURL}}{{item.img}}" class="img-responsive">
 			{{/if}}
