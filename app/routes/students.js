@@ -14,7 +14,7 @@ var curr_students = Ember.A([
     lastname: 'Hefley',
     type: 'MS',
     description: 'Mickey works on the Cybertrust 2.0 project. He is designing an administrative data management interface for experiment design. He is also augmenting the platform with data capture techniques focused on gathering user interaction data during experimentation.',
-    img: 'img/Mickey.jpg',
+    img: 'img/mickey.jpg',
     link: '',
   },
   {
