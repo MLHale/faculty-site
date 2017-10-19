@@ -1,6 +1,7 @@
-import Ember from 'ember';
+import Route from '@ember/routing/route';
+import { A } from '@ember/array';
 
-var curr_students = Ember.A([
+var curr_students = A([
   {
     firstname: 'Gabi',
     lastname: 'Wethor',
@@ -36,7 +37,7 @@ var curr_students = Ember.A([
 
 ]);
 
-var former_students = Ember.A([
+var former_students = A([
   {
     firstname: 'Kerolos',
     lastname: 'Lotfy',
@@ -48,7 +49,7 @@ var former_students = Ember.A([
 
 ]);
 
-export default Ember.Route.extend({
+export default Route.extend({
   model(){
     return {"current": curr_students.sortBy('lastname'), "former": former_students.sortBy('lastname')};
   }

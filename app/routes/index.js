@@ -1,6 +1,7 @@
-import Ember from 'ember';
+import Route from '@ember/routing/route';
+import { A } from '@ember/array';
 
-var items = Ember.A([
+var items = A([
   {
     title: '2017 Gencyber Announcement',
     description: 'Nebraska GenCyber 2017 was a huge success! Thanks for participating. Click the image above for this year\'s content repository',
@@ -37,7 +38,7 @@ var items = Ember.A([
 
 ]);
 
-export default Ember.Route.extend({
+export default Route.extend({
 	model() {
 		return items;
 	}

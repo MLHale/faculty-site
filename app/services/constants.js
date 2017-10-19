@@ -1,6 +1,6 @@
-import Ember from 'ember';
+import Service from '@ember/service';
 import config from '../config/environment';
 
-export default Ember.Service.extend({
+export default Service.extend({
   rootURL: config.rootURL
 });
