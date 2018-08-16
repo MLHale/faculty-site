@@ -1,3 +1,14 @@
+/**
+ * @Author: Matthew Hale <matthale>
+ * @Date:   2018-08-16T07:45:27-05:00
+ * @Email:  mlhale@unomaha.edu
+ * @Filename: app.css
+ * @Last modified by:   matthale
+ * @Last modified time: 2018-08-16T08:33:32-05:00
+ * @Copyright: Copyright (C) 2018 Matthew L. Hale
+ */
+
+
 
 body {
   overflow-x: hidden;
@@ -867,6 +878,7 @@ a:active {
 }
 .box-masonry .box-masonry-text {
   padding: 15px 20px 15px;
+  text-align: justify;
 }
 .box-masonry .box-masonry-text p {
   color: #999999;
@@ -928,8 +940,8 @@ a:active {
   display: block;
   position: relative;
   min-height: 100px;
-  background: #ccc;
 }
+
 .box-masonry .box-masonry-image.with-hover-overlay:before {
   display: block;
   position: absolute;
