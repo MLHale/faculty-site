@@ -4,7 +4,7 @@
  * @Email:  mlhale@unomaha.edu
  * @Filename: app.css
  * @Last modified by:   matthale
- * @Last modified time: 2018-08-16T08:33:32-05:00
+ * @Last modified time: 2018-08-16T08:48:03-05:00
  * @Copyright: Copyright (C) 2018 Matthew L. Hale
  */
 
@@ -39,8 +39,9 @@ section.background-secondary {
 .project-menu > li > a.active {
   border-bottom-color: #f4f4f4 !important;
 }
-.main-heading {
-  margin-top: -5px;
+
+.student-heading {
+  margin-top: 10px;
 }
 
 .section-inverse {
