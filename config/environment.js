@@ -1,3 +1,15 @@
+/**
+ * @Author: Matthew Hale <matthale>
+ * @Date:   2018-08-16T07:45:27-05:00
+ * @Email:  mlhale@unomaha.edu
+ * @Filename: environment.js
+ * @Last modified by:   matthale
+ * @Last modified time: 2018-08-16T08:41:40-05:00
+ * @Copyright: Copyright (C) 2018 Matthew L. Hale
+ */
+
+
+
 'use strict';
 
 module.exports = function(environment) {
@@ -45,8 +57,9 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.rootURL = '/mhale/'
+    ENV.rootURL = '/'
     ENV.routerRootURL = '/'
+    ENV.host = "http://www.mlhale.com"
   }
 
   return ENV;
