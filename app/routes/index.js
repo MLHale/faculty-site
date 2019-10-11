@@ -4,7 +4,7 @@
  * @Email:  mlhale@unomaha.edu
  * @Filename: index.js
  * @Last modified by:   matthale
- * @Last modified time: 2019-10-10T23:46:09-05:00
+ * @Last modified time: 2019-10-10T23:49:11-05:00
  * @Copyright: Copyright (C) 2018 Matthew L. Hale
  */
 
@@ -18,8 +18,8 @@ var items = A([
         title: 'Gencyber 2019',
         description: 'Nebraska GenCyber 2019 was super fun! We built Rube Goldberg machines. Click the image above to explore the 2019 Nebraska GenCyber modules',
         img: 'img/gencyber-2019-logo.png',
-        link: '',
-        link_external: 'projects.gencyber'
+        link: 'projects.gencyber',
+        link_external: ''
 
     },
     {
