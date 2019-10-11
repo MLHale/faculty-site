@@ -4,7 +4,7 @@
  * @Email:  mlhale@unomaha.edu
  * @Filename: index.js
  * @Last modified by:   matthale
- * @Last modified time: 2018-08-16T08:26:39-05:00
+ * @Last modified time: 2019-10-10T23:46:09-05:00
  * @Copyright: Copyright (C) 2018 Matthew L. Hale
  */
 
@@ -14,14 +14,22 @@ import Route from '@ember/routing/route';
 import { A } from '@ember/array';
 
 var items = A([
-  {
-    title: 'Gencyber Announcement',
-    description: 'Nebraska GenCyber 2018 was a huge success! Thanks for participating. Click the image above to explore the Nebraska GenCyber modules',
-    img: 'img/gencyber-brand-compliant.png',
-    link: '',
-    link_external: 'https://www.nebraskagencyber.com/modules/2018'
+    {
+        title: 'Gencyber 2019',
+        description: 'Nebraska GenCyber 2019 was super fun! We built Rube Goldberg machines. Click the image above to explore the 2019 Nebraska GenCyber modules',
+        img: 'img/gencyber-2019-logo.png',
+        link: '',
+        link_external: 'projects.gencyber'
 
-  },
+    },
+    {
+        title: 'Gencyber 2018',
+        description: 'Nebraska GenCyber 2018 was a huge success! Thanks for participating. Click the image above to explore the Nebraska GenCyber modules',
+        img: 'img/gencyber-brand-compliant.png',
+        link: '',
+        link_external: 'https://www.nebraskagencyber.com/modules/2018'
+
+    },
 	{
 		title: 'Cybertrust',
 		description: 'Cybertrust is a simulation platform for conducting phishing research experiments. The platform was originally designed while I was at the University of Tulsa. CyberTrust presents users with realistic web content (both malicious and innocuous), helps researchers investigate how they perceive and trust different types of content, and then trains them to perform better in the future. ',
