@@ -1,7 +1,0 @@
-{
-  "name": "halelab",
-  "dependencies": {
-    "masonry": "^4.2.2",
-    "imagesloaded": "^4.1.4"
-  }
-}

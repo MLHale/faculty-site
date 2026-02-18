@@ -1,56 +1,30 @@
-# Halelab
+# Faculty Site (Next.js)
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This project has been rewritten from Ember to **Next.js (App Router)** and is configured for **static export** deployment on GitHub Pages.
 
-## Prerequisites
+## Local development
 
-You will need the following things properly installed on your computer.
+```bash
+npm install
+npm run dev
+```
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
-* [Ember CLI](https://ember-cli.com/)
-* [Google Chrome](https://google.com/chrome/)
+Open http://localhost:3000.
 
-## Installation
+## Production build (static export)
 
-* `git clone <repository-url>` this repository
-* `cd halelab`
-* `npm install`
+```bash
+npm run build
+```
 
-## Running / Development
+The exported static files are generated in `out/`.
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
+## GitHub Pages deployment
 
-### Code Generators
+A workflow is included at `.github/workflows/deploy.yml`.
 
-Make use of the many generators for code, try `ember help generate` for more details
+- It builds with `GITHUB_ACTIONS=true` and auto-detects the repository name from `GITHUB_REPOSITORY`.
+- `next.config.mjs` sets `basePath` and `assetPrefix` for project pages (e.g. `https://<user>.github.io/<repo>/`).
+- The workflow uploads `out/` and deploys with `actions/deploy-pages`.
 
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Linting
-
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+If your default branch is not `main`, update the workflow trigger accordingly.
